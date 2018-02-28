@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8"></meta>
+	<meta charset="utf-8">
 	<title>Invie</title>
 	<style type="text/css">
 		body {
@@ -12,11 +12,18 @@
 			max-width: 100%;
 			vertical-align: top;
 		}
+		img#responsive {
+			display: none;
+		}
+		@media screen and (max-width: 768px) {
+			img#responsive {
+				display: block;
+			}
+		}
 
 	</style>
 </head>
 <body>
-	<img src="invie.png">
-	<img src="background.png">
+	<img src="invie-responsive.png" id="responsive">
 </body>
 </html>
